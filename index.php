@@ -102,6 +102,7 @@
             .blok {
                 overflow-x: auto;
                 white-space: nowrap;
+                text-align: center;
             }
             .kolom {
                 vertical-align: top;
