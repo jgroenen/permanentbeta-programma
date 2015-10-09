@@ -82,7 +82,7 @@
         </style>
         <style>
             html, body {
-                background: black;
+                background: #111;
                 color: white;
                 font-family: Arial;
                 line-height: 1.4;
@@ -98,21 +98,27 @@
             h2 {
                 font-weight: 900;
                 text-align: center;
+                line-height: 2;
             }
             .blok {
                 overflow-x: auto;
                 white-space: nowrap;
-                text-align: center;
+                background: #333 url(darkdenim3.png);
+                border-top: 1px solid #000;
+                border-bottom: 1px solid #666;
+                padding: 0 10px;
+                min-height: 200px;
             }
             .kolom {
                 vertical-align: top;
-                width: 340px;
+                width: 300px;
                 height: 200px;
                 display: inline-block;
                 background: #f66;
-                margin: 10px 2px;
+                margin: 6px 0;
                 white-space: normal;
                 position: relative;
+                border-bottom: 4px solid #111;
             }
             .kolom p {
                 margin: 10px;
@@ -154,7 +160,7 @@
             // Loop the blocks and shift to the first hearted column.
             $(".blok").each(function () {
                 var $kolom = $(this).find(".heart_5617cae9ce5d0.hearted").first().closest(".kolom");
-                if ($kolom.position()) $(this).scrollLeft($kolom.position().left);
+                if ($kolom.position()) $(this).scrollLeft($kolom.position().left + -10);
             });
             // Bind click to toggle on and save.
             $(".heart_5617cae9ce5d0").click(function () {
