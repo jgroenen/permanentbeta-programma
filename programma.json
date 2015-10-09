@@ -57,10 +57,12 @@
             "titel": "Open Data & Civic Innovation"
         },
         "4": {
-            "titel": "Smart City"
+            "titel": "Smart City",
+            "kleur": "#66f"
         },
         "5": {
-            "titel": "Smart City"
+            "titel": "Smart City",
+            "kleur": "#6f6"
         },
         "6": {
             "titel": "Smart City"

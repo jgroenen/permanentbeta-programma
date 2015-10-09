@@ -151,6 +151,11 @@
                     return !!hearts[$el.data("blokid") + ',' + $el.data("kolomid")];
                 })($(this)));
             });
+            // Loop the blocks and shift to the first hearted column.
+            $(".blok").each(function () {
+                var $kolom = $(this).find(".heart_5617cae9ce5d0.hearted").first().closest(".kolom");
+                if ($kolom.position()) $(this).scrollLeft($kolom.position().left);
+            });
             // Bind click to toggle on and save.
             $(".heart_5617cae9ce5d0").click(function () {
                 var $el = $(this);
