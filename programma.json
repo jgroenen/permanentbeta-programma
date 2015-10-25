@@ -80,38 +80,19 @@
             "titel": "Smart City"
         }
     },
-    "presentaties": [
-        {
-            "blok": 1,
-            "kolom": 1,
-            "naam": "Johan Groenen",
-            "bio": "Johan is API architect en civic hacker bij DataLab Amsterdam.",
-            "titel": "Open APIs",
-            "beschrijving": "APIs zijn overal. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-        },
-        {
-            "blok": 1,
-            "kolom": 3,
-            "naam": "Testman",
-            "bio": "Testman is cool.",
-            "titel": "Testdingen enzo",
-            "beschrijving": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-        },
-        {
-            "blok": 1,
-            "kolom": 4,
-            "naam": "Hatsa Hopsa",
-            "bio": "Hatsa is cool.",
-            "titel": "Dingen doen",
-            "beschrijving": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-        },
-        {
-            "blok": 3,
-            "kolom": 8,
-            "naam": "Hatsa Hopsa",
-            "bio": "Hatsa is cool.",
-            "titel": "Dingen doen",
-            "beschrijving": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-        }
-    ]
+    "presentaties": [{
+        "blok": 1,
+        "kolom": 1,
+        "naam": "Johan Groenen",
+        "bio": "Johan is API architect en civic hacker bij DataLab Amsterdam.",
+        "titel": "Open APIs",
+        "beschrijving": "APIs zijn overal. Het internet verandert aan de lopende band. Computers praten met computers zonder dat er nog een mens aan te pas komt."
+    }, {
+        "blok": 3,
+        "kolom": 3,
+        "naam": "Hans van Tol",
+        "bio": "The Game Master",
+        "titel": "De 10 regels voor een goed spel",
+        "beschrijving": "Winnaar van meerdere internationale prijzen."
+    }]
 }

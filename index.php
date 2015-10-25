@@ -94,6 +94,7 @@
                 font-size: 2em;
                 font-weight: 100;
                 text-align: center;
+                line-height: 1.4;
             }
             h2 {
                 font-weight: 900;
@@ -112,7 +113,7 @@
             .kolom {
                 vertical-align: top;
                 width: 300px;
-                height: 200px;
+                height: 300px;
                 display: inline-block;
                 background: #f66;
                 margin: 6px 0;
@@ -122,7 +123,7 @@
             }
             .kolom p {
                 margin: 10px;
-                height: 110px;
+                height: 165px;
                 overflow-y: hidden;
                 text-align: justify;
             }
@@ -138,6 +139,7 @@
                     <?php foreach ($programma->kolommen as $kolomId => $kolom) { ?>
                         <?php $presentatie = getPresentatie($blokId, $kolomId) ?>
                         <?php if ($presentatie) { ?>
+                            <!--http://www.html5rocks.com/en/tutorials/dnd/basics/-->
                             <section class="kolom" <?php if ($kolom->kleur) { ?>style="background: <?= $kolom->kleur ?>"<?php } ?>>
                                 <div class="heart_5617cae9ce5d0" data-blokid="<?= $blokId ?>" data-kolomid="<?= $kolomId ?>"></div>
                                 <h1><?= $presentatie->titel ?></h1>
@@ -168,6 +170,9 @@
                 $el.toggleClass("hearted");
                 hearts[$el.data("blokid") + ',' + $el.data("kolomid")] = $el.hasClass("hearted");
                 localStorage.setItem("hearts", JSON.stringify(hearts));
+            });
+            $.get("programma.json", function (data) {
+                console.log(data); // FIXME
             });
         </script>
     </body>
