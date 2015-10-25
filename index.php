@@ -5,7 +5,7 @@
     // 2) http://www.convertcsv.com/csv-to-json.htm
     // 3) http://www.jsoneditoronline.org/
 
-    $sprekersJson = file_get_contents('sprekers.json');
+    $sprekersJson = file_get_contents('../private/sprekers.json');
     $sprekers = json_decode($sprekersJson);
     $toezeggingen = [];
     
@@ -24,6 +24,11 @@
 <!DOCTYPE html>
 <html>
     <head>
+        
+        <!--[if lt IE 9]>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <![endif]-->
+      
         <!--<meta name='viewport' content='width=320,initial-scale=1,user-scalable=0'>-->
         <meta charset="UTF-16">
         <meta name="mobile-web-app-capable" content="yes">
@@ -53,6 +58,7 @@
                 font-size: 2em;
                 color: #ffc;
             }
+            main {display:block} 
             .spreker {
                 display: inline-block;
                 margin: 2em;
