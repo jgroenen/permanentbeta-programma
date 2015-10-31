@@ -1,24 +1,12 @@
 <?php
     $programmaJson = file_get_contents('programma.json');
     $programma = json_decode($programmaJson);
-    $ordered = [];
     
-    function loadProgramma() {
-        global $programma, $ordered;
-        foreach ($programma->presentaties as $presentatie) {
-            if (empty($ordered[$presentatie->blok])) {
-                $ordered[$presentatie->blok] = [];
-            }
-            $ordered[$presentatie->blok][$presentatie->kolom] = $presentatie;
-        }
-    }
-    loadProgramma();
-    
-    function getPresentatie($blokId, $kolomId) {
-        global $ordered;
-        return empty($ordered[$blokId]) ? null :
-               empty($ordered[$blokId][$kolomId]) ? null :
-               $ordered[$blokId][$kolomId];
+    function getPresentaties($blokId, $ruimteId) {
+        global $programma;
+        return array_filter($programma->presentaties, function ($presentatie) use ($blokId, $ruimteId) {
+            return $presentatie->blok === $blokId && $presentatie->ruimte === $ruimteId;
+        });
     }
 ?>
 <!DOCTYPE html>
@@ -110,22 +98,42 @@
                 padding: 0 10px;
                 min-height: 200px;
             }
-            .kolom {
+            .ruimte {
                 vertical-align: top;
                 width: 300px;
                 height: 300px;
                 display: inline-block;
-                background: #f66;
                 margin: 6px 0;
                 white-space: normal;
                 position: relative;
                 border-bottom: 4px solid #111;
+                border: 2px dashed #fff;
             }
-            .kolom p {
+            .ruimte p {
                 margin: 10px;
                 height: 165px;
                 overflow-y: hidden;
                 text-align: justify;
+            }
+            .presentatie {
+                height: 100%;
+                cursor: move;
+            }
+            .presentatie.tech {
+                background: #09f;
+            }
+            .presentatie.edu {
+                background: #ff0;
+                color: #111;
+            }
+            .presentatie.sust {
+                background: #f90;
+            }
+            .presentatie.self {
+                background: #f09;
+            }
+            .presentatie.org {
+                background: #0f0;
             }
         </style>
     </head>
@@ -136,17 +144,20 @@
             <?php foreach ($programma->blokken as $blokId => $blok) { ?>
                 <h2><?= $blok->begintijd ?> tot <?= $blok->eindtijd ?></h2>
                 <section class="blok">
-                    <?php foreach ($programma->kolommen as $kolomId => $kolom) { ?>
-                        <?php $presentatie = getPresentatie($blokId, $kolomId) ?>
-                        <?php if ($presentatie) { ?>
-                            <!--http://www.html5rocks.com/en/tutorials/dnd/basics/-->
-                            <section class="kolom" <?php if ($kolom->kleur) { ?>style="background: <?= $kolom->kleur ?>"<?php } ?>>
-                                <div class="heart_5617cae9ce5d0" data-blokid="<?= $blokId ?>" data-kolomid="<?= $kolomId ?>"></div>
-                                <h1><?= $presentatie->titel ?></h1>
-                                <h2>door <?= $presentatie->naam ?></h2>
-                                <p><?= $presentatie->beschrijving ?></p>
-                            </section>
-                        <?php } ?>
+                    <?php foreach ($programma->ruimtes as $ruimteId => $ruimte) { ?>
+                        <section class="ruimte">
+                            <?= $ruimteId ?>
+                            <?php $presentaties = getPresentaties($blokId, $ruimteId); ?>
+                            <?php foreach ($presentaties as $presentatie) { ?>
+                                <!--http://www.html5rocks.com/en/tutorials/dnd/basics/-->
+                                <section class="presentatie <?= $presentatie->thema ?>" draggable="true">
+                                    <div class="heart_5617cae9ce5d0" data-blokid="<?= $blokId ?>" data-ruimteid="<?= $ruimteId ?>"></div>
+                                    <h1><?= $presentatie->titel ?></h1>
+                                    <h2>door <?= $presentatie->naam ?></h2>
+                                    <p><?= $presentatie->beschrijving ?></p>
+                                </section>
+                            <?php } ?>
+                        </section>
                     <?php } ?>
                 </section>
             <?php } ?>
@@ -156,24 +167,24 @@
             // Loop hearts and toggle on.
             $(".heart_5617cae9ce5d0").each(function () {
                 $(this).toggleClass("hearted", (function ($el) {
-                    return !!hearts[$el.data("blokid") + ',' + $el.data("kolomid")];
+                    return !!hearts[$el.data("blokid") + ',' + $el.data("ruimteid")];
                 })($(this)));
             });
             // Loop the blocks and shift to the first hearted column.
             $(".blok").each(function () {
-                var $kolom = $(this).find(".heart_5617cae9ce5d0.hearted").first().closest(".kolom");
-                if ($kolom.position()) $(this).scrollLeft($kolom.position().left + -10);
+                var $ruimte = $(this).find(".heart_5617cae9ce5d0.hearted").first().closest(".ruimte");
+                if ($ruimte.position()) $(this).scrollLeft($ruimte.position().left + -10);
             });
             // Bind click to toggle on and save.
             $(".heart_5617cae9ce5d0").click(function () {
                 var $el = $(this);
                 $el.toggleClass("hearted");
-                hearts[$el.data("blokid") + ',' + $el.data("kolomid")] = $el.hasClass("hearted");
+                hearts[$el.data("blokid") + ',' + $el.data("ruimteid")] = $el.hasClass("hearted");
                 localStorage.setItem("hearts", JSON.stringify(hearts));
             });
-            $.get("programma.json", function (data) {
-                console.log(data); // FIXME
-            });
+            //$.get("programma.json", function (data) {
+            //    console.log(data); // FIXME
+            //});
         </script>
     </body>
 </html>

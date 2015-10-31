@@ -1,98 +1,138 @@
 {
     "blokken": {
-        "1": {
+        "opening": {
             "begintijd": "9:30",
             "eindtijd": "10:00"
         },
+        "1": {
+            "begintijd": "10:00",
+            "eindtijd": "10:45"
+        },
         "2": {
-            "begintijd": "10:15",
-            "eindtijd": "11:00"
+            "begintijd": "11:00",
+            "eindtijd": "11:45"
         },
         "3": {
-            "begintijd": "11:15",
-            "eindtijd": "12:00"
+            "begintijd": "12:00",
+            "eindtijd": "12:45"
+        },
+        "lunch": {
+            "begintijd": "13:00",
+            "eindtijd": "13:45"
         },
         "4": {
-            "begintijd": "12:00",
-            "eindtijd": "13:00"
+            "begintijd": "14:00",
+            "eindtijd": "14:45"
         },
         "5": {
-            "begintijd": "13:15",
-            "eindtijd": "14:00"
+            "begintijd": "15:00",
+            "eindtijd": "15:45"
         },
         "6": {
-            "begintijd": "14:15",
-            "eindtijd": "15:00"
+            "begintijd": "16:00",
+            "eindtijd": "16:45"
         },
         "7": {
-            "begintijd": "15:15",
-            "eindtijd": "16:00"
+            "begintijd": "17:00",
+            "eindtijd": "17:45"
+        },
+        "diner": {
+            "begintijd": "18:00",
+            "eindtijd": "18:45"
         },
         "8": {
-            "begintijd": "16:15",
-            "eindtijd": "17:00"
+            "begintijd": "19:00",
+            "eindtijd": "19:45"
         },
-        "9": {
-            "begintijd": "17:15",
-            "eindtijd": "18:00"
-        },
-        "10": {
-            "begintijd": "18:00",
-            "eindtijd": "19:00"
-        },
-        "11": {
-            "begintijd": "19:15",
-            "eindtijd": "20:00"
+        "afsluiting": {
+            "begintijd": "20:00",
+            "eindtijd": "21:00"
         }
     },
-    "kolommen": {
-        "1": {
-            "titel": "Open Data & Civic Innovation",
-            "kleur": "#f66"
+    "themas": {
+        "tech": {
+            "titel": "Technologie"
         },
-        "2": {
-            "titel": "Smart City"
+        "sust": {
+            "titel": "Duurzaamheid"
         },
-        "3": {
-            "titel": "Open Data & Civic Innovation"
+        "self": {
+            "titel": "Zelfhulp"
         },
-        "4": {
-            "titel": "Smart City",
-            "kleur": "#66f"
+        "org": {
+            "titel": "Organisatie"
         },
-        "5": {
-            "titel": "Smart City",
-            "kleur": "#6f6"
+        "edu": {
+            "titel": "Educatie"
+        }
+    },
+    "ruimtes": {
+        "A0|2": {
+            "capaciteit": 30
         },
-        "6": {
-            "titel": "Smart City"
+        "A0|3": {
+            "capaciteit": 30
         },
-        "7": {
-            "titel": "Smart City"
+        "A0|4": {
+            "capaciteit": 30
         },
-        "8": {
-            "titel": "Smart City"
+        "A0|5": {
+            "capaciteit": 30
         },
-        "9": {
-            "titel": "Smart City"
+        "A0|6": {
+            "capaciteit": 30
         },
-        "10": {
-            "titel": "Smart City"
+        "A1|11": {
+            "capaciteit": 30
+        },
+        "A1|12": {
+            "capaciteit": 30
+        },
+        "A1|Kantine": {
+            "capaciteit": 100
+        },
+        "A1|Business Lounge": {
+            "capaciteit": 50
+        },
+        "A1|Kapel": {
+            "capaciteit": 100
         }
     },
     "presentaties": [{
-        "blok": 1,
-        "kolom": 1,
-        "naam": "Johan Groenen",
-        "bio": "Johan is API architect en civic hacker bij DataLab Amsterdam.",
-        "titel": "Open APIs",
-        "beschrijving": "APIs zijn overal. Het internet verandert aan de lopende band. Computers praten met computers zonder dat er nog een mens aan te pas komt."
+        "naam": "Achmed Awad",
+        "titel": "Slimme Social Media",
+        "blok": "1",
+        "thema": "tech",
+        "ruimte": "A0|2",
+        "bio": "CEO Media Injection",
+        "beschrijving": "",
+        "kids": "nee"
     }, {
-        "blok": 3,
-        "kolom": 3,
-        "naam": "Hans van Tol",
-        "bio": "The Game Master",
-        "titel": "De 10 regels voor een goed spel",
-        "beschrijving": "Winnaar van meerdere internationale prijzen."
+        "naam": "Noor Bongers",
+        "titel": "Powerplay",
+        "blok": "1",
+        "thema": "self",
+        "ruimte": "A0|4",
+        "bio": "",
+        "beschrijving": "",
+        "kids": "nee"
+    }, {
+        "naam": "Taminiau",
+        "titel": "Plastics",
+        "blok": "1",
+        "thema": "sust",
+        "ruimte": "A0|5",
+        "bio": "",
+        "beschrijving": "",
+        "kids": "ja"
+    }, {
+        "naam": "Kevin Weijers",
+        "titel": "Selfexperiments gone wrong",
+        "blok": "1",
+        "thema": "edu",
+        "ruimte": "A1|11",
+        "bio": "",
+        "beschrijving": "",
+        "kids": "ja"
     }]
 }

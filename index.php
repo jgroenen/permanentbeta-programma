@@ -5,7 +5,7 @@
     // 2) http://www.convertcsv.com/csv-to-json.htm
     // 3) http://www.jsoneditoronline.org/
 
-    $sprekersJson = file_get_contents('sprekers.json');
+    $sprekersJson = file_get_contents('private/sprekers.json');
     $sprekers = json_decode($sprekersJson);
     $toezeggingen = [];
     
