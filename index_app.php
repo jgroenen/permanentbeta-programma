@@ -25,8 +25,9 @@
             /* CSS by GenerateCSS.com */
             .heart_5617cae9ce5d0 {
                 position: absolute;
-                right: 46px;
-                top: 10px;
+                right: 60px;
+                bottom: 60px;
+                cursor: pointer;
             }
             .heart_5617cae9ce5d0:before,
             .heart_5617cae9ce5d0:after {
@@ -91,12 +92,13 @@
             }
             .blok {
                 overflow-x: auto;
+                overflow-y: hidden;
                 white-space: nowrap;
                 background: #333 url(darkdenim3.png);
                 border-top: 1px solid #000;
                 border-bottom: 1px solid #666;
                 padding: 0 10px;
-                min-height: 200px;
+                height: 312px;
             }
             .ruimte {
                 vertical-align: top;
@@ -106,8 +108,16 @@
                 margin: 6px 0;
                 white-space: normal;
                 position: relative;
-                border-bottom: 4px solid #111;
-                border: 2px dashed #fff;
+                margin: 4px;
+            }
+            .placeholder {
+                height: 100%;
+                width: 100%;
+                border: 2px dashed #222;
+                text-align: center;
+                font-size: 2em;
+                line-height: 300px;
+                color: #222;
             }
             .ruimte p {
                 margin: 10px;
@@ -117,14 +127,15 @@
             }
             .presentatie {
                 height: 100%;
-                cursor: move;
+                border-bottom: 4px solid #111;
+                /*cursor: move;*/
             }
             .presentatie.tech {
                 background: #09f;
             }
             .presentatie.edu {
                 background: #ff0;
-                color: #111;
+                color: #660;
             }
             .presentatie.sust {
                 background: #f90;
@@ -134,6 +145,11 @@
             }
             .presentatie.org {
                 background: #0f0;
+                color: #060;
+            }
+            .presentatie.pb {
+                background: #eee;
+                color: #000;
             }
         </style>
     </head>
@@ -143,21 +159,26 @@
         <section class="programma">
             <?php foreach ($programma->blokken as $blokId => $blok) { ?>
                 <h2><?= $blok->begintijd ?> tot <?= $blok->eindtijd ?></h2>
-                <section class="blok">
+                <section class="blok" data-blokid="<?= $blokId ?>">
                     <?php foreach ($programma->ruimtes as $ruimteId => $ruimte) { ?>
-                        <section class="ruimte">
-                            <?= $ruimteId ?>
-                            <?php $presentaties = getPresentaties($blokId, $ruimteId); ?>
-                            <?php foreach ($presentaties as $presentatie) { ?>
-                                <!--http://www.html5rocks.com/en/tutorials/dnd/basics/-->
-                                <section class="presentatie <?= $presentatie->thema ?>" draggable="true">
-                                    <div class="heart_5617cae9ce5d0" data-blokid="<?= $blokId ?>" data-ruimteid="<?= $ruimteId ?>"></div>
-                                    <h1><?= $presentatie->titel ?></h1>
-                                    <h2>door <?= $presentatie->naam ?></h2>
-                                    <p><?= $presentatie->beschrijving ?></p>
-                                </section>
-                            <?php } ?>
-                        </section>
+                        <section class="ruimte" data-ruimteid="<?= $ruimteId ?>"><?php
+                            $presentaties = getPresentaties($blokId, $ruimteId);
+                            if ($presentaties) {
+                                foreach ($presentaties as $presentatie) { ?>
+                                    <!--http://www.html5rocks.com/en/tutorials/dnd/basics/-->
+                                    <section class="presentatie <?= $presentatie->thema ?>">
+                                        <div class="heart_5617cae9ce5d0" data-presentatieId="<?= $presentatie->naam ?>"></div>
+                                        <h1><?= $presentatie->ruimte ?>: <?= $presentatie->titel ?></h1>
+                                        <h2>door <?= $presentatie->naam ?></h2>
+                                        <p><?= $presentatie->beschrijving ?></p>
+                                    </section>
+                                <?php }
+                            } else {
+                                ?>
+                                    <section class="placeholder"><?= $ruimteId ?></section>
+                                <?php
+                            }
+                        ?></section>
                     <?php } ?>
                 </section>
             <?php } ?>
@@ -167,7 +188,7 @@
             // Loop hearts and toggle on.
             $(".heart_5617cae9ce5d0").each(function () {
                 $(this).toggleClass("hearted", (function ($el) {
-                    return !!hearts[$el.data("blokid") + ',' + $el.data("ruimteid")];
+                    return !!hearts[$el.data("presentatieid")];
                 })($(this)));
             });
             // Loop the blocks and shift to the first hearted column.
@@ -179,12 +200,9 @@
             $(".heart_5617cae9ce5d0").click(function () {
                 var $el = $(this);
                 $el.toggleClass("hearted");
-                hearts[$el.data("blokid") + ',' + $el.data("ruimteid")] = $el.hasClass("hearted");
+                hearts[$el.data("presentatieid")] = $el.hasClass("hearted");
                 localStorage.setItem("hearts", JSON.stringify(hearts));
             });
-            //$.get("programma.json", function (data) {
-            //    console.log(data); // FIXME
-            //});
         </script>
     </body>
 </html>
