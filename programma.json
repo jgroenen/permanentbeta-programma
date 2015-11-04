@@ -103,7 +103,7 @@
     },
     "presentaties": [
         {
-            "naam": "Kim van den Berg",
+            "naam": "Kim van den Berg en Joop&nbsp;Korver",
             "achtergrond": "Permanent Beta",
             "titel": "Opening",
             "beschrijving": "",
@@ -270,7 +270,7 @@
         {
             "naam": "Permanent Beta",
             "achtergrond": "",
-            "titel": "Demo's",
+            "titel": "Demo's 1",
             "beschrijving": "",
             "opmerking": "",
             "jeugd": "ja",
@@ -281,7 +281,7 @@
         {
             "naam": "Permanent Beta",
             "achtergrond": "",
-            "titel": "Demo's",
+            "titel": "Demo's 2",
             "beschrijving": "",
             "opmerking": "",
             "jeugd": "ja",
@@ -292,7 +292,7 @@
         {
             "naam": "Permanent Beta",
             "achtergrond": "",
-            "titel": "Demo's",
+            "titel": "Demo's 3",
             "beschrijving": "",
             "opmerking": "",
             "jeugd": "ja",
@@ -314,7 +314,7 @@
         {
             "naam": "Permanent Beta",
             "achtergrond": "",
-            "titel": "Demo's",
+            "titel": "Demo's 4",
             "beschrijving": "",
             "opmerking": "",
             "jeugd": "ja",
@@ -325,7 +325,7 @@
         {
             "naam": "Permanent Beta",
             "achtergrond": "",
-            "titel": "Demo's",
+            "titel": "Demo's 5",
             "beschrijving": "",
             "opmerking": "",
             "jeugd": "ja",
@@ -336,7 +336,7 @@
         {
             "naam": "Permanent Beta",
             "achtergrond": "",
-            "titel": "Demo's",
+            "titel": "Demo's 6",
             "beschrijving": "",
             "opmerking": "",
             "jeugd": "ja",
@@ -347,7 +347,7 @@
         {
             "naam": "Permanent Beta",
             "achtergrond": "",
-            "titel": "Demo's",
+            "titel": "Demo's 7",
             "beschrijving": "",
             "opmerking": "",
             "jeugd": "ja",
@@ -358,7 +358,7 @@
         {
             "naam": "Permanent Beta",
             "achtergrond": "",
-            "titel": "Diner",
+            "titel": "Presentatie Hackathon (en Diner)",
             "beschrijving": "",
             "opmerking": "",
             "jeugd": "ja",
@@ -369,7 +369,7 @@
         {
             "naam": "Permanent Beta",
             "achtergrond": "",
-            "titel": "Demo's",
+            "titel": "Demo's 8",
             "beschrijving": "",
             "opmerking": "",
             "jeugd": "ja",
@@ -381,7 +381,7 @@
             "naam": "Permanent Beta",
             "achtergrond": "",
             "titel": "Fail night",
-            "beschrijving": "",
+            "beschrijving": "Fail fast, fail often, fail anywhere. Zo snel mogelijk op je bek durven gaan voorkomt grote investeringen in faalprojecten. Door vallen en opstaan leren we het meest. Maar leren van andermans fouten is natuurlijk nog veel leuker!",
             "opmerking": "",
             "jeugd": "ja",
             "blok": "afsluiting",
@@ -417,7 +417,7 @@
             "beschrijving": "",
             "opmerking": "",
             "jeugd": "",
-            "blok": "6",
+            "blok": "5",
             "ruimte": "A1|Kantine",
             "thema": "org"
         },
@@ -428,7 +428,7 @@
             "beschrijving": "",
             "opmerking": "GOEDE AUDIO NODIG",
             "jeugd": "",
-            "blok": "7",
+            "blok": "6",
             "ruimte": "A1|Business Lounge",
             "thema": "edu"
         },
@@ -461,7 +461,7 @@
             "beschrijving": "",
             "opmerking": "",
             "jeugd": "ja",
-            "blok": "1",
+            "blok": "8",
             "ruimte": "A1|Kantine",
             "thema": "tech"
         },
@@ -472,8 +472,8 @@
             "beschrijving": "",
             "opmerking": "",
             "jeugd": "ja",
-            "blok": "2",
-            "ruimte": "A0|4",
+            "blok": "7",
+            "ruimte": "A0|5",
             "thema": "org"
         },
         {
@@ -518,8 +518,8 @@
             "beschrijving": "",
             "opmerking": "",
             "jeugd": "",
-            "blok": "7",
-            "ruimte": "A1|12",
+            "blok": "3",
+            "ruimte": "A0|5",
             "thema": "tech"
         },
         {
@@ -545,7 +545,7 @@
             "thema": "self"
         },
         {
-            "naam": "Peter Joosten / Paul K?",
+            "naam": "Peter Joosten",
             "achtergrond": "",
             "titel": "Zelfexperimenten Gone Bad",
             "beschrijving": "",
@@ -613,12 +613,12 @@
         {
             "naam": "Joost Plattel",
             "achtergrond": "",
-            "titel": "Curious Corner",
+            "titel": "Curious Corners of the Internet",
             "beschrijving": "",
             "opmerking": "einde middag",
             "jeugd": "ja",
-            "blok": "7",
-            "ruimte": "A0|2",
+            "blok": "6",
+            "ruimte": "A1|Kantine",
             "thema": "tech"
         },
         {
@@ -639,8 +639,8 @@
             "beschrijving": "Ondernemer Jeroen Komen vertelt over ontmoetingen en avonturen die hij beleeft als hij met zijn zelfgebouwde propellervliegtuigje door heel Europa reist. Sinds 2010 – nadat hij zichzelf overbodig had verklaard binnen zijn eigen IT-bedrijf – observeert hij de wereld vanaf een afstandje. Versterkt met veelzeggende beelden overziet hij cultuur, geografie, historie, economie en innovatie. Graag inspireert hij je om buiten gebaande wegen te blijven treden en zo verder te vliegen. Een voorproefje van de foto’s komt voorbij op http://www.nietremmenmaarvliegen.nl.\n",
             "opmerking": "einde middag/begin avond",
             "jeugd": "ja",
-            "blok": "7",
-            "ruimte": "A0|4",
+            "blok": "8",
+            "ruimte": "A1|11",
             "thema": "self"
         },
         {
@@ -650,7 +650,7 @@
             "beschrijving": "",
             "opmerking": "",
             "jeugd": "",
-            "blok": "5",
+            "blok": "1",
             "ruimte": "A1|Kantine",
             "thema": "tech"
         },
@@ -683,7 +683,7 @@
             "beschrijving": "Hoe doe je dat, samenwerken? Daar worden hele boeken over geschreven en dure cursussen over gegeven. Maar echt, het is zo simpel. Frans van der Reep, wereldwijd bekend visionair, zal je in een practische act concreet laten samenwerken en je laten ervaren wat er nodig is voor samenwerking.",
             "opmerking": "Na 15 uur, piano nodig",
             "jeugd": "",
-            "blok": "6",
+            "blok": "7",
             "ruimte": "A1|Business Lounge",
             "thema": "edu"
         },
@@ -694,8 +694,8 @@
             "beschrijving": "",
             "opmerking": "",
             "jeugd": "ja",
-            "blok": "8",
-            "ruimte": "A0|4",
+            "blok": "6",
+            "ruimte": "A0|6",
             "thema": "sust"
         },
         {
@@ -705,8 +705,8 @@
             "beschrijving": "Wat is Bitcoin en wat kun je er mee? Hoe installeer je een Bitcoin buidel op je smartphone. Hoe gaat een betaling in zijn werk? En wat heeft Bitcoin nog meer te bieden?",
             "opmerking": "",
             "jeugd": "ja",
-            "blok": "2",
-            "ruimte": "A1|Kantine",
+            "blok": "8",
+            "ruimte": "A0|4",
             "thema": "tech"
         },
         {
@@ -770,8 +770,8 @@
             "beschrijving": "In deze tijd van verandering, kansen en overvloed gebeurt veel moois en ook veel spannends. Zelf merk ik dat om echt impact te hebben het waardevol is met veel partijen en mensen verbinding te vinden en te houden. Toch kom ik met regelmaat in situaties terecht waarin er meer geremd lijkt te worden dan gas gegeven. Verward en soms ook bekaf zit ik dan later thuis op de bank met een gevoel van wat gebeurt hier nou en hoe kan ik in dit spanningsveld de juiste mensen verbonden houden. Dat vind ik een worsteling, een moeilijke, maar wel een waardevolle. Met alles waar ik aan hebt meegebouwd begin ik denk ik een beetje te ontdekken wat slim is en wat onhandig,\nDaar heb ik het graag met jullie over. Zodat wie deze worsteling herkent, wellicht ook wat handvatten vindt om er slim mee om te gaan.",
             "opmerking": "",
             "jeugd": "",
-            "blok": "3",
-            "ruimte": "A1|Kantine",
+            "blok": "8",
+            "ruimte": "A1|Business Lounge",
             "thema": "org"
         },
         {
@@ -882,7 +882,7 @@
             "beschrijving": "",
             "opmerking": "avondprogramma",
             "jeugd": "",
-            "blok": "8",
+            "blok": "3",
             "ruimte": "A1|Kantine",
             "thema": "tech"
         },
@@ -915,8 +915,8 @@
             "beschrijving": "https://www.evernote.com/shard/s264/sh/f80630cf-29ed-41d5-852a-28433a58f514/894b67879db42b4f2cf5fcd6ae7b4969",
             "opmerking": "",
             "jeugd": "",
-            "blok": "3",
-            "ruimte": "A0|5",
+            "blok": "7",
+            "ruimte": "A1|12",
             "thema": "tech"
         },
         {
@@ -948,7 +948,7 @@
             "beschrijving": "The Smart City is a movement that enables government and citizens to maximize the potential of technical real time measurement to influence policy and every day life. However the therm is being coined by big ICT vendors promising an utopian city that changes to the citizens needs by an overdose of sensors. Waag Society runs a local Smart Citizen Lab, Code for NL and chairs Code for Europe. This way we shift the focus from the Smart City to its citizens, independed of the technology that is used.\n \nThe Smart Citizen Lab explores tools and applications to map the world around us. Along with citizens, scientists, and designers, we deal with themes ranging from air quality to the conditions of bathing water to noise pollution. With smartphones, smart watches, and wristbands, it’s becoming increasingly simple to collect the data around us. But, open data from the municipality and DIY sensors are also playing a major role in the retrieval of (new) data. Thanks to today's technology, measuring, itself, has become much easier, and can help citizens learn more about their city, town, or neighborhood. \n \nCode for Europe helps cities effectuate open data and smart city strategies. As we all know government and ICT are not the best of friends. Examples of out of control projects costing the tax payers millions with no results are more common than we would like. Modelled after the successful Code for America method, Code for Europe puts civic innovators together with civil servants to create innovative and citizen centered solutions. By using open source, open data and agile working methods government gets first hand experience how to setup and execute smart ICT projects.",
             "opmerking": "ochtend",
             "jeugd": "",
-            "blok": "6",
+            "blok": "1",
             "ruimte": "A0|6",
             "thema": "org"
         },
@@ -1000,7 +1000,7 @@
         {
             "naam": "Erik de Wild",
             "achtergrond": "Éducation Cities (zie http://www.yaacovhecht.com/education-cities/ )",
-            "titel": "",
+            "titel": "Éducation Cities",
             "beschrijving": "",
             "opmerking": "",
             "thema": "",
@@ -1010,7 +1010,7 @@
             "thema": "org"
         },
         {
-            "naam": "Amber de Vries",
+            "naam": "Amber el Zarow en Gilly Wilde",
             "achtergrond": "Voedingsmiddelentechnoloog",
             "titel": "Voedselverspilling, -veiligheid en -technologie",
             "beschrijving": "",
@@ -1026,8 +1026,8 @@
             "titel": "Het Gelukshuis ",
             "beschrijving": "Alacritas realiseert het 1e Gelukshuis van Nederland. Een plek waar je leert om gelukkig(er) te worden, maar ook waar projecten en initiatieven mogen ontstaan waar mensen gelukkig van worden. Met het motto 'Geluk vermenigvuldigt als je het deelt' hopen we, naast het realiseren van een fysieke plek voor het Gelukshuis, het huis vooral een symbolisch huis te laten zijn; een fundament van geluk wat we als een virus willen verspreiden en waar we met een ieder aan willen bouwen. ",
             "opmerking": "BESCHIKBAAR TUSSEN 9:00 en 12:00 uur",
-            "blok": "1",
-            "ruimte": "A1|Business Lounge",
+            "blok": "2",
+            "ruimte": "A0|4",
             "thema": "org"
         },
         {
@@ -1041,14 +1041,63 @@
             "thema": "self"
         },
         {
+            "naam": "Arjan van der Meij",
+            "achtergrond": "",
+            "titel": "Elk kind een maker",
+            "beschrijving": "zie excel",
+            "blok": "1",
+            "ruimte": "A1|Business Lounge",
+            "thema": "edu"
+        },
+        {
             "naam": "Jaron Hoste en Daan Sanders",
             "achtergrond": "Coder Dojo",
             "titel": "De wereld van Minecraft",
             "beschrijving": "Rotterdam nabouwen in een virtueel universum.",
             "opmerking": "KIDS",
-            "blok": "1",
-            "ruimte": "A0|6",
+            "blok": "2",
+            "ruimte": "A1|Kantine",
             "thema": "tech"
+        },
+        {
+            "naam": "Maarten",
+            "achtergrond": "",
+            "titel": "Videocollectief",
+            "beschrijving": "Iets met video",
+            "opmerking": "",
+            "blok": "7",
+            "ruimte": "A0|2",
+            "thema": "tech"
+        },
+        {
+            "naam": "Harry te Riele",
+            "achtergrond": "",
+            "titel": "De DAM",
+            "beschrijving": "Alternatieve munteenheden voor communities (zie excel)",
+            "opmerking": "",
+            "blok": "8",
+            "ruimte": "A0|6",
+            "thema": "org"
+        },
+        {
+            "naam": "Joop Korver",
+            "achtergrond": "",
+            "titel": "Niet meer, maar beter!",
+            "beschrijving": "",
+            "opmerking": "",
+            "blok": "7",
+            "ruimte": "A0|4",
+            "thema": "self"
+        },
+        {
+            "naam": "Ine",
+            "achtergrond": "",
+            "titel": "Hacking Habitat",
+            "beschrijving": "",
+            "opmerking": "",
+            "blok": "8",
+            "ruimte": "A1|12",
+            "thema": "self"
         }
     ]
 }

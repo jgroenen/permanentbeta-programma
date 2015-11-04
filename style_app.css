@@ -1,0 +1,177 @@
+html, body {
+    background: #111;
+    color: white;
+    font-family: Verdana, Tahoma, Arial;
+    line-height: 1.4;
+    width: 100%;
+    overflow-x: hidden;
+    min-width: 340px;
+}
+h1 {
+    padding-top: 10px;
+    font-size: 1.6em;
+    font-weight: 100;
+    text-align: center;
+    line-height: 1.2;
+    font-family: "Fredoka One";
+}
+h2 {
+    font-size: 1.2em;
+    font-weight: 500;
+    text-align: center;
+    line-height: 2;
+    font-variant: small-caps;
+}
+p {
+    text-align: center;
+}
+p a {
+    display: block;
+    width: 200px;
+    margin: auto;
+    color: white;
+    border: 1px solid white;
+    text-decoration: none;
+    margin-top: 10px;
+}
+.blok {
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    background: #333 url(darkdenim3.png);
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #666;
+    padding: 0 10px;
+    height: 330px;
+}
+.ruimte {
+    vertical-align: top;
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    margin: 6px 0;
+    white-space: normal;
+    position: relative;
+    margin: 4px;
+}
+.placeholder {
+    height: 100%;
+    width: 100%;
+    border: 2px dashed #222;
+    text-align: center;
+    font-size: 2em;
+    line-height: 300px;
+    color: #222;
+}
+.presentatie {
+    height: 100%;
+    border-bottom: 4px solid #111;
+    overflow-y: hidden;
+    /*cursor: move;*/
+}
+.presentatie p {
+    margin: 10px;
+    text-align: justify;
+}
+.presentatie.tech {
+    background: #0ff;
+    color: #077;
+}
+.presentatie.edu {
+    background: #ff0;
+    color: #770;
+}
+.presentatie.sust {
+    background: #f90;
+    color: #720;
+}
+.presentatie.self {
+    background: #f09;
+    color: #702;
+}
+.presentatie.org {
+    background: #0f0;
+    color: #070;
+}
+.presentatie.pb {
+    color: #fff;
+}
+/* FIXME Also a bit ugly :) */
+.details .ruimte,
+.details .presentatie {
+    width: 100%;
+    min-height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border: 0;
+    margin: 0;
+    z-index: 1000;
+}
+.details .ruimte {
+    background: #000;
+}
+.details .presentatie {
+    overflow: auto;
+}
+.indicator {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+}
+.bar {
+    width: 34px;
+    height: 4px;
+    background: #000;
+    margin-top: 40px;
+    padding: 2px;
+}
+.bar .fill {
+    width: 20%;
+    height: 100%;
+    background: #0f0;
+}
+/* CSS by GenerateCSS.com */
+.heart_5617cae9ce5d0 {
+    position: absolute;
+    cursor: pointer;
+}
+.heart_5617cae9ce5d0:before,
+.heart_5617cae9ce5d0:after {
+    position:absolute;
+    content: "";
+    left: 19px;
+    top: 0;
+    width: 19px;
+    height: 32px;
+    background-color: #711;
+    -moz-border-radius: 12px 12px 0 0;
+    border-radius: 12px 12px 0 0;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform:rotate(-45deg);
+    -webkit-transform-origin: 0 100%;
+    -moz-transform-origin: 0 100%;
+    -ms-transform-origin: 0 100%;
+    -o-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+}
+.heart_5617cae9ce5d0.hearted:before,
+.heart_5617cae9ce5d0.hearted:after {
+    background-color: #dd1;
+}
+.heart_5617cae9ce5d0:after {
+    left: 0;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transform-origin: 100% 100%;
+    -moz-transform-origin: 100% 100%;
+    -ms-transform-origin: 100% 100%;
+    -o-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+}
