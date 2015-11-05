@@ -4,7 +4,7 @@
     
     function getPresentaties($blokId, $ruimteId) {
         global $programma;
-        return array_filter($programma->presentaties, function ($presentatie) use ($blokId, $ruimteId) {
+        return array_filter((array) $programma->presentaties, function ($presentatie) use ($blokId, $ruimteId) {
             return $presentatie->blok === $blokId && $presentatie->ruimte === $ruimteId;
         });
     }
@@ -41,12 +41,12 @@
                             <section class="ruimte" data-ruimteid="<?= $ruimteId ?>"><?php
                                 $presentaties = getPresentaties($blokId, $ruimteId);
                                 if ($presentaties) {
-                                    foreach ($presentaties as $presentatie) { ?>
+                                    foreach ((array) $presentaties as $presentatieId => $presentatie) { ?>
                                         <!--http://www.html5rocks.com/en/tutorials/dnd/basics/-->
-                                        <section class="presentatie <?= $presentatie->thema ?>">
-                                            <div class="indicator">
-                                                <div class="heart_5617cae9ce5d0" data-presentatieId="<?= $presentatie->titel ?>"></div>
-                                                <div class="bar" data-presentatieId="<?= $presentatie->titel ?>" data-ruimteid="<?= $ruimteId ?>"><div class="fill"></div></div>
+                                        <section class="presentatie <?= $presentatie->thema ?>" data-presentatieId="<?= $presentatieId ?>">
+                                            <div class="indicator" data-presentatieId="<?= $presentatieId ?>">
+                                                <div class="heart_5617cae9ce5d0" data-presentatieId="<?= $presentatieId ?>"></div>
+                                                <div class="bar" data-presentatieId="<?= $presentatieId ?>" data-ruimteid="<?= $ruimteId ?>"><div class="fill"></div></div>
                                             </div>
                                             <h1><?= $presentatie->ruimte ?>: <?= $presentatie->titel ?></h1>
                                             <h2>door <?= $presentatie->naam ?></h2>
