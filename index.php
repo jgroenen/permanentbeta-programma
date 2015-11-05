@@ -39,85 +39,6 @@
         <link rel='shortcut icon' type='image/png' href='pb.png'>
         <link href="reset.css" rel="stylesheet">
         <script src="jquery-2.1.4.min.js"></script>
-        <style>
-            html, body {
-                font-size: 100%;
-                text-align: center;
-                font-family: Arial;
-                line-height: 1.4;
-                background: #333;
-                color: #fff;
-            }
-            h1, h2, h3 {
-                font-size: 4em;
-            }
-            header h2, em {
-                color: #ee2f71;
-            }
-            header h3 {
-                font-size: 2em;
-                color: #ffc;
-            }
-            main {display:block} 
-            .spreker {
-                display: inline-block;
-                margin: 2em;
-                width: 300px;
-                border: 1px solid gray;
-                padding: 1em 0;
-                background: #ee2f71;
-                padding: 0.5em;
-            }
-            .spreker h1 {
-                font-size: 2em;
-            }
-            .spreker h2 {
-                font-size: 1.4em;
-                line-height: 2em;
-            }
-            .spreker h3 {
-                font-size: 1em;
-            }
-            a.button {
-                display: inline-block;
-                color: #fff;
-                background: #2fee71;
-                margin: 1em;
-                padding: 0.5em 1em;
-                border-radius: 0.1em;
-                text-decoration: none;
-            }
-            main {
-                background: #222;
-                padding: 1em;
-                text-align: left;
-            }
-            p {
-                margin-bottom: 1em;
-            }
-            a {
-                color: #fff;
-            }
-            @media only screen and (max-width: 400px) {
-                header {
-                    border-bottom: 1px solid gray;
-                }
-                .spreker {
-                    margin: auto;
-                    border: 0;
-                    border-bottom: 1px solid gray;
-                    width: 100%;
-                    padding: 0;
-                    margin-bottom: 0.5em;
-                }
-                h1, h2 {
-                    font-size: 2em;
-                }
-                header h3 {
-                    font-size: 1em;
-                }
-            }
-        </style>
         <script>
           (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
           (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -128,6 +49,7 @@
           ga('send', 'pageview');
         
         </script>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <header>
