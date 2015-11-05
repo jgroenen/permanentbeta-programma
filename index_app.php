@@ -46,7 +46,7 @@
                                         <section class="presentatie <?= $presentatie->thema ?>" data-presentatieId="<?= $presentatieId ?>">
                                             <div class="indicator" data-presentatieId="<?= $presentatieId ?>">
                                                 <div class="heart_5617cae9ce5d0" data-presentatieId="<?= $presentatieId ?>"></div>
-                                                <div class="bar" data-presentatieId="<?= $presentatieId ?>" data-ruimteid="<?= $ruimteId ?>"><div class="fill"></div></div>
+                                                <div class="bar" data-presentatieId="<?= $presentatieId ?>" data-capaciteit="<?= $ruimte->capaciteit ?>"><div class="fill"></div></div>
                                             </div>
                                             <h1><?= $presentatie->ruimte ?>: <?= $presentatie->titel ?></h1>
                                             <h2>door <?= $presentatie->naam ?></h2>
