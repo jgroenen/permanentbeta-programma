@@ -118,13 +118,23 @@
                 }
             }
         </style>
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        
+          ga('create', 'UA-69263567-1', 'auto');
+          ga('send', 'pageview');
+        
+        </script>
     </head>
     <body>
         <header>
             <h2>Permanent Beta</h2>
             <h3>Meer inspiratie dan je aankan!</h3>
             <h1>Voorlopige sprekerslijst <em>PB dag #7</em> Rotterdam</h1>
-            <h3>13 november 2015, 9:30 tot 20:00 uur</h3>
+            <h3>13 november 2015, 9:30 tot 21:00 uur</h3>
             <a class="button" href="http://www.meetup.com/PermanentBeta/events/222345799/">Aanmelden</a>
         </header>
         <main>
