@@ -1,36 +1,19 @@
 <?php
-
-    // Sprekers:
-    // 1) csv vanuit google docs
-    // 2) http://www.convertcsv.com/csv-to-json.htm
-    // 3) http://www.jsoneditoronline.org/
-
-    $sprekersJson = file_get_contents('../private/sprekers.json');
-    $sprekers = json_decode($sprekersJson);
-    $toezeggingen = [];
+    $programmaJson = file_get_contents('programma.json');
+    $programma = json_decode($programmaJson);
     
-    foreach ($sprekers as $spreker) {
-        if ($spreker->Status === "toegezegd") {
-            $toezeggingen[] = (object) [
-                "Naam" => $spreker->Naam,
-                "Achtergrond" => $spreker->Achtergrond,
-                "Titel" => $spreker->Titel
-            ];
-        }
+    function getPresentaties($blokId, $ruimteId) {
+        global $programma;
+        return array_filter((array) $programma->presentaties, function ($presentatie) use ($blokId, $ruimteId) {
+            return $presentatie->blok === $blokId && $presentatie->ruimte === $ruimteId;
+        });
     }
-    
-    shuffle($toezeggingen);
 ?>
 <!DOCTYPE html>
 <html>
     <head>
-        
-        <!--[if lt IE 9]>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-        <![endif]-->
-      
-        <!--<meta name='viewport' content='width=320,initial-scale=1,user-scalable=0'>-->
         <meta charset="UTF-16">
+        <!--<meta name='viewport' content='width=320,initial-scale=1,user-scalable=0'>-->
         <meta name="mobile-web-app-capable" content="yes">
         <meta name='viewport' content='minimal-ui,width=320,initial-scale=1,user-scalable=0'>
         <meta name="google" content="notranslate">
@@ -39,6 +22,8 @@
         <link rel='shortcut icon' type='image/png' href='pb.png'>
         <link href="reset.css" rel="stylesheet">
         <script src="jquery-2.1.4.min.js"></script>
+        <link href='https://fonts.googleapis.com/css?family=Fredoka+One' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="style_app.css">
         <script>
           (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
           (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -49,38 +34,46 @@
           ga('send', 'pageview');
         
         </script>
-        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <header>
+        <section class="details"></section>
+        <section class="page">
             <h2>Permanent Beta</h2>
-            <h3>Meer inspiratie dan je aankan!</h3>
-            <h1>Voorlopige sprekerslijst <em>PB dag #7</em> Rotterdam</h1>
-            <h3>13 november 2015, 9:30 tot 21:00 uur</h3>
-            <a class="button" href="http://www.meetup.com/PermanentBeta/events/222345799/">Aanmelden</a>
-        </header>
-        <main>
-            <p>
-                Het exacte programma met alle tijden wordt binnenkort vastgesteld.
-            </p>
-            <p>
-                PB dag #7 zal plaatsvinden op:<br>
-                <a href="http://www.hetlyceumrotterdam.nl/">Het Lyceum Rotterdam</a><br>
-                Beukelsdijk 91, 3021 AE Rotterdam
-            </p>
-            <p>
-                <a href="http://www.permanentbeta.nl">Meer informatie over Permanent Beta</a>.
-            </p>
-        </main>
-        <section class="sprekers">
-            <?php foreach ($toezeggingen as $toezegging) { ?>
-                <section class="spreker">
-                    <h2><?=$toezegging->Naam?></h2>
-                    <h3><?=$toezegging->Achtergrond?></h3>
-                    <h1><?=$toezegging->Titel?></h1>
-                </section>
-            <?php } ?>
+            <h1>Programma 13&nbsp;november&nbsp;2015</h1>
+            <p>Het Lyceum Rotterdam</p>
+            <p><a href="http://www.permanentbeta.nl/events/pb-dag/">meer informatie</a></p>
+            <p style="margin-top: 15px">Klik op <span style="color: #711; font-size: 2em">&#9829;</span> om je voorkeur aan te geven.</p>
+            <section class="programma">
+                <?php foreach ($programma->blokken as $blokId => $blok) { ?>
+                    <h2><?= $blok->begintijd ?> tot <?= $blok->eindtijd ?></h2>
+                    <section class="blok" data-blokid="<?= $blokId ?>">
+                        <?php foreach ($programma->ruimtes as $ruimteId => $ruimte) { ?>
+                            <section class="ruimte" data-ruimteid="<?= $ruimteId ?>"><?php
+                                $presentaties = getPresentaties($blokId, $ruimteId);
+                                if ($presentaties) {
+                                    foreach ((array) $presentaties as $presentatieId => $presentatie) { ?>
+                                        <!--http://www.html5rocks.com/en/tutorials/dnd/basics/-->
+                                        <section class="presentatie <?= $presentatie->thema ?>" data-presentatieId="<?= $presentatieId ?>">
+                                            <div class="indicator" data-presentatieId="<?= $presentatieId ?>">
+                                                <div class="heart_5617cae9ce5d0" data-presentatieId="<?= $presentatieId ?>"></div>
+                                                <div class="bar" data-presentatieId="<?= $presentatieId ?>" data-capaciteit="<?= $ruimte->capaciteit ?>"><div class="fill"></div></div>
+                                            </div>
+                                            <h1><?= $presentatie->ruimte ?>: <?= $presentatie->titel ?></h1>
+                                            <h2>door <?= $presentatie->naam ?></h2>
+                                            <p><?= $presentatie->beschrijving ?></p>
+                                        </section>
+                                    <?php }
+                                } else {
+                                    ?>
+                                        <section class="placeholder"><?= $ruimteId ?></section>
+                                    <?php
+                                }
+                            ?></section>
+                        <?php } ?>
+                    </section>
+                <?php } ?>
+            </section>
         </section>
-        <a class="button" href="http://www.meetup.com/PermanentBeta/events/222345799/">Aanmelden</a>
+        <script src="programma.js"></script>
     </body>
 </html>

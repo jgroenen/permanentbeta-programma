@@ -41,7 +41,7 @@ p a {
     background: #333 url(darkdenim3.png);
     border-top: 1px solid #000;
     border-bottom: 1px solid #666;
-    padding: 0 10px;
+    padding: 30px 10px 30px 0;
     height: 330px;
 }
 .ruimte {
@@ -52,7 +52,7 @@ p a {
     margin: 6px 0;
     white-space: normal;
     position: relative;
-    margin: 4px;
+    margin: 4px 10px;
 }
 .placeholder {
     height: 100%;
@@ -72,6 +72,7 @@ p a {
 .presentatie p {
     margin: 10px;
     text-align: justify;
+    padding: 10px;
 }
 .presentatie.tech {
     background: #0ff;
@@ -95,6 +96,7 @@ p a {
 }
 .presentatie.pb {
     color: #fff;
+    border: 0;
 }
 /* FIXME Also a bit ugly :) */
 .details .ruimte,
