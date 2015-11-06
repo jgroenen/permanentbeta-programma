@@ -25,7 +25,7 @@ h2 {
 p {
     text-align: center;
 }
-p a {
+p a.button {
     display: block;
     width: 200px;
     margin: auto;
@@ -95,6 +95,7 @@ p a {
     color: #070;
 }
 .presentatie.pb {
+    background: #909;
     color: #fff;
     border: 0;
 }

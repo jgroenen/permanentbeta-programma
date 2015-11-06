@@ -38,6 +38,7 @@ $(".heart_5617cae9ce5d0").click(function (e) {
 // Click to enlarge.
 $(".ruimte").click(function () {
     $details = $(this).clone(); // FIXME memory leak?
+    $details.find(".presentatie").append("<p style='text-align: center'><a href='#'>sluiten</a></p>");
     $(".details").append($details);
     $details.find(".indicator").remove();
     $("html").css("overflow", "hidden");
