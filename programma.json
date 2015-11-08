@@ -428,7 +428,7 @@
       "beschrijving": "",
       "opmerking": "GOEDE AUDIO NODIG",
       "jeugd": "",
-      "blok": "6",
+      "blok": "2",
       "ruimte": "A1|Business Lounge",
       "thema": "edu"
     },
@@ -463,7 +463,7 @@
       "jeugd": "ja",
       "blok": "3",
       "ruimte": "A0|5",
-      "thema": "tech"
+      "thema": "self"
     },
     "34": {
       "naam": "Jan Willem van der Straten",
@@ -480,7 +480,7 @@
       "naam": "Peter Troxler en Leo Remijn ",
       "achtergrond": "Creating 010",
       "titel": "Make & design voor onderwijs",
-      "beschrijving": "Makersonderwijs – “leren door te  Op een aantal scholen is een voorzichtig begin gemaakt met, gevoed door Fab Labs en het Maker Movement. Het is pril maar groeit gestaag. Dat komt met name door goede feedback van leerlingen en studenten. Ze vinden het leuk en leren veel. Docenten bevestigen dat: de leerlingen worden sterker. Sterker in hun handelen, in hun oplossingsgerichtheid en zekerder over hun eigen kunnen – onafhankelijk van plaats, niveau en leeftijd. Toch zijn er valkuilen die makersonderwijs moet vermeiden, en zijn er nog een aantal vitte vlekken te verkennen.  ",
+      "beschrijving": "Makersonderwijs – 'leren door te maken' pleit voor een een structurele rol van make & design in het onderwijs. Op een aantal scholen is een voorzichtig begin gemaakt met, gevoed door Fab Labs en het Maker Movement. Het is pril maar groeit gestaag. Dat komt met name door goede feedback van leerlingen en studenten. Ze vinden het leuk en leren veel. Docenten bevestigen dat: de leerlingen worden sterker. Sterker in hun handelen, in hun oplossingsgerichtheid en zekerder over hun eigen kunnen – onafhankelijk van plaats, niveau en leeftijd. Toch zijn er valkuilen die makersonderwijs moet vermeiden, en zijn er nog een aantal vitte vlekken te verkennen.",
       "opmerking": "",
       "thema": "tech",
       "jeugd": "ja",
@@ -571,9 +571,9 @@
       "beschrijving": "Als je doet wat je altijd hebt gedaan, krijg je wat je altijd hebt gekregen!  Als je wilt veranderen is er beweging nodig; een volgende stap. In de 'The Next Step' sessie gaan we aan de slag met vragen en onderwerpen die op dat moment voor de groep en de individuele deelnemers belangrijk en actueel zijn. Hierbij deel ik mijn inzichten, kennis, ervaringen en oplossingen. <a href='http://www.paulveld.nl' target='_blank'>www.paulveld.nl</a>",
       "opmerking": "",
       "jeugd": "",
-      "thema": "org",
-      "blok": "2",
-      "ruimte": "A1|Business Lounge"
+      "blok": "6",
+      "ruimte": "A1|Business Lounge",
+      "thema": "org"
     },
     "44": {
       "naam": "Eric Vlugt",
@@ -753,8 +753,8 @@
     "60": {
       "naam": "Angelle Chang ",
       "achtergrond": "JOW Fashion, Kledinglabel wat is ontstaan uit de gedachte 'Perfect because of imperfection.'",
-      "titel": "Fashion/sociaal ondernemerschap",
-      "beschrijving": "",
+      "titel": "Perfect, because of imperfections",
+      "beschrijving": "JOW Junior is in 2013 ontstaan en genoemd naar mijn zoontje Jowin, nu alweer 4 jaar oud, geboren met een schisis (beter bekend als een hazelip). Ik wil met zijn kleding de boodschap meegeven, ja hij mag zeker gezien worden maar niet alleen omdat hij er anders uitziet. Ik hoop met mijn kleding, respect, zelfvertrouwen en cultuur mee te geven. Ik laat me graag  inspireren door tradities en culturen waarbij onze Nederlands-Chinese roots dominerend zijn.  JOW fashion by Angelle Chang is in 2015 uitgebreid met een volwassenlijn passend bij de kinderlijn daarnaast verzorgen wij workshops, styling, maatpakken en bedrijfskleding. Al mijn ontwerpen worden in Nederland met zorg gemaakt daarbij maken we gebruik van Nederlandse (traditionele) stoffen, in samenwerking met lokale ateliers zoals Marian Atelier, Natasja Confectie en Talentfabriek Rotterdam.",
       "opmerking": "",
       "jeugd": "ja",
       "blok": "4",
@@ -820,7 +820,7 @@
       "naam": "Jan Henk Bouman en Berend Watchus",
       "achtergrond": "",
       "titel": "Energie-innovatie",
-      "beschrijving": "",
+      "beschrijving": "We staan aan de vooravond van de Derde Industriële Revolutie volgens Jeremy Rifkin, die woensdag 4-11-2015 in Nederland was. Er komen drie soorten internet samen; internet van energie, communicatie en transport. Op deze nieuwe infrastructuur gaan we onze duurzame samenleving en bedrijven bouwen. Fossiele brandstoffen doen niet meer mee. Via de 'collaborative commons' gaan we alles zelf beheren zegt Rifkin. De metropool Rottermdam-DenHaag werkt samen met het team van Rifkin om deze regio voor te bereiden op de 'Zero Marginal Cost Society'. Jan-Henk en Berend nemen je mee in de gedachtenlijnen van Rifkin en zoomen ook in op het energie vraagstuk; Gaan we ooit gratis energie krijgen?",
       "opmerking": "",
       "jeugd": "",
       "blok": "5",
@@ -1029,7 +1029,7 @@
       "naam": "Janelle Ward ",
       "achtergrond": "Janelle Ward is Assistant Professor in the Department of Media and Communication where she teaches courses for the International Bachelor Communication and Media (IBCoM) and the Master of Arts in Media Studies.  ",
       "titel": "What Does Your Tinder Profile Say About You?",
-      "beschrijving": "For Tinder users en non-users an opportunity to learn about the hype from an entertaining yet academic perspective. Janelle will help you understand your own profile choices and why you swipe left or right on other’s profiles (hint: it’s more than just sex appeal).  And...Tinder can have some serious effects on how we deal with relationships. More info: http://istheresomethingmissing.com/ ",
+      "beschrijving": "For Tinder users and non-users an opportunity to learn about the hype from an entertaining yet academic perspective. Janelle will help you understand your own profile choices and why you swipe left or right on other’s profiles (hint: it’s more than just sex appeal). More info: http://istheresomethingmissing.com/",
       "opmerking": "KAN IN DE OCHTEND, MOET UITERLIJK 13:00 WEER WEG.",
       "blok": "2",
       "ruimte": "A0|5",

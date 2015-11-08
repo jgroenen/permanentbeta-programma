@@ -43,6 +43,7 @@
             <p>Het Lyceum Rotterdam</p>
             <p><a class="button" href="http://www.permanentbeta.nl/events/pb-dag/">meer informatie</a></p>
             <p style="margin-top: 15px">Klik op <span style="color: #711; font-size: 2em">&#9829;</span> om je voorkeur aan te geven.</p>
+            <hr>
             <section class="programma">
                 <?php foreach ($programma->blokken as $blokId => $blok) { ?>
                     <h2><?= $blok->begintijd ?> tot <?= $blok->eindtijd ?></h2>
