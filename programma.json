@@ -91,6 +91,9 @@
     "A1|12": {
       "capaciteit": 30
     },
+    "A1|13": {
+      "capaciteit": 30
+    },
     "A1|Kantine": {
       "capaciteit": 100
     },
@@ -521,15 +524,15 @@
       "thema": "tech"
     },
     "39": {
-      "naam": "Rob Dieleman",
+      "naam": "Annette Dolle",
       "achtergrond": "",
-      "titel": "De gemeente als slimme organisatie",
-      "beschrijving": "",
+      "titel": "Dragon Dreaming Project Design",
+      "beschrijving": "De focus zal liggen op de holistische visie van Dragon Dreaming, de verbinding tussen strategische handelingen en de droomfase, obstakels & drempels onderweg (draken!), invloed van inheemse volkeren, de kracht van diversiteit en celebration!",
       "opmerking": "",
       "jeugd": "nee",
       "blok": "2",
       "ruimte": "A0|6",
-      "thema": "org"
+      "thema": "self"
     },
     "40": {
       "naam": "Susan Dullink",
@@ -582,8 +585,8 @@
       "beschrijving": "",
       "opmerking": "",
       "jeugd": "",
-      "blok": "4",
-      "ruimte": "A0|4",
+      "blok": "7",
+      "ruimte": "A0|2",
       "thema": "tech"
     },
     "45": {
@@ -593,7 +596,7 @@
       "beschrijving": "Bas van de Haterd, auteur van o.a. '(R)evolutie van Werk' en '10 Banen die verdwijnen & 10 Banen die verschijnen' neemt je op geheel eigen wijze mee door de invloed van technologie op werk en maatschappij. Wat voor werk gaan we doen? Hoe gaan we dit werk organiseren? Welke maatschappelijke vraagstukken brengt dit met zich mee?",
       "opmerking": "",
       "jeugd": "ja",
-      "blok": "3",
+      "blok": "5",
       "ruimte": "A0|4",
       "thema": "org"
     },
@@ -686,9 +689,9 @@
       "thema": "edu"
     },
     "54": {
-      "naam": "Wilmar van Grondelle",
+      "naam": "Monica Heller",
       "achtergrond": "",
-      "titel": "Algenkweken",
+      "titel": "Na 25 jaar hetzelfde oordeel bleek het toch niet zo te zijn…",
       "beschrijving": "",
       "opmerking": "",
       "jeugd": "ja",
@@ -857,20 +860,20 @@
       "beschrijving": "",
       "opmerking": "",
       "jeugd": "ja",
-      "blok": "5",
+      "blok": "3",
       "ruimte": "A0|4",
       "thema": "tech"
     },
     "70": {
       "naam": "Annette Dolle",
       "achtergrond": "",
-      "titel": "Dragon Dreaming Project Design",
-      "beschrijving": "De focus zal liggen op de holistische visie van Dragon Dreaming, de verbinding tussen strategische handelingen en de droomfase, obstakels & drempels onderweg (draken!), invloed van inheemse volkeren, de kracht van diversiteit en celebration!",
+      "titel": "Draken Dromen",
+      "beschrijving": "Waarom kan je beter rekenen als je tegelijkertijd naar klassieke muziek luistert? En hoe komt het dat je je beter kan concentreren als je door je buik adem haalt?<br>In deze training leren we allemaal handigheden die je gebruiken kunt als je onderweg bent naar een PTA of examen. We ontdekken nieuwe kennis over hoe processen in je hoofd en hart gaan, we kijken naar onze eigen ervaringen en oefenen vaardigheden die je daar bij kunnen helpen.<br>Dit is allemaal verpakt in een oefenpakket dat we 'Draken Dromen' noemen, of 'Dragon Dreaming' als je Engels leuker vindt.",
       "opmerking": "einde middag/avond",
       "jeugd": "ja",
       "blok": "6",
       "ruimte": "A0|5",
-      "thema": "org"
+      "thema": "self"
     },
     "71": {
       "naam": "Adriaan Rijkens",
@@ -1005,10 +1008,10 @@
       "ruimte": "A1|12"
     },
     "83": {
-      "naam": "Amber el Zarow en Gilly Wilde",
+      "naam": "Amber el Zarow - Youth Food Movement Rotterdam",
       "achtergrond": "Voedingsmiddelentechnoloog",
-      "titel": "Voedselverspilling, -veiligheid en -technologie",
-      "beschrijving": "",
+      "titel": "Voedselverspilling",
+      "beschrijving": "Nederlandse consumenten gooien ieder jaar voor zo'n € 2,5 miljard aan voedsel weg. Producenten, tussenhandel, horeca en supermarkten verspillen nog eens zo'n € 2,5 miljard aan voedsel. Wat is de impact hiervan op het milieu eigenlijk? En wat kunnen we eraan doen?",
       "opmerking": "",
       "jeugd": "ja",
       "blok": "4",
@@ -1060,8 +1063,8 @@
       "titel": "de nieuwe werelden van videocollectief extraordinaire",
       "beschrijving": "de nieuwe werelden van videocollectief extraordinaire’/ Bij United Enterprise draait alles om het maken van korte video's. Van promotiefilms en muziekclips tot reclames en andere multimedia-klappers. Maarten Kok (1986) en Sietse Koenders (1984) gaan daarbij wel een stuk verder dan het simpelweg neerzetten van een camera en het schreeuwen van 'actie!'. Als videocollectief extraordinaire creëren ze volledig nieuwe werelden rondom het verhaal dat klanten willen vertellen. In de Keilewerf in Rotterdam hebben de twee filmmakers de ruimte om uit te pakken. Daar hebben ze hun opnamestudio, atelier en kantoor ineen. Het is de plek waar ideeën tot leven komen, decors worden gebouwd en veel van de video's geschoten en gemonteerd worden. 'Vrijwel alles doen we met de hand en filmen zo veel mogelijk in real life', aldus Maarten. 'Met slechts hier en daar een vleugje computer.",
       "opmerking": "",
-      "blok": "7",
-      "ruimte": "A0|2",
+      "blok": "4",
+      "ruimte": "A0|4",
       "thema": "tech"
     },
     "89": {
@@ -1092,6 +1095,26 @@
       "opmerking": "",
       "blok": "8",
       "ruimte": "A1|12",
+      "thema": "self"
+    },
+    "92": {
+      "naam": "Gerdt Kernkamp",
+      "achtergrond": "",
+      "titel": "School for Excellence",
+      "beschrijving": "Hoe ziet onderwijs op wereldschaal eruit? Op dit moment organiseert ieder land zijn onderwijs zelf, maar min of meer op dezelfde manier; iedereen moet goed leren lezen, schrijven en rekenen om te kunnen concurreren met andere landen. Maar eigenlijk kunnen we beter samenwerken om zo de planetaire uitdagingen als klimaat, energie, voedsel, veiligheid, etc. aan te gaan. School for Excellence zit midden in de ontwikkeling van dat nieuwe soort onderwijs, maar in de Permanent Beta-spirit hebben we natuurlijk lang niet alle antwoorden. We presenteren wat er wereldwijs al gebeurt (wat wij tenminste weten :-) en gaan graag in gesprek over hoe verder.",
+      "opmerking": "",
+      "blok": "1",
+      "ruimte": "A1|13",
+      "thema": "edu"
+    },
+    "93": {
+      "naam": "dr. Wouter van den Berg",
+      "achtergrond": "",
+      "titel": "Neuro, het brein, DNA en carrière",
+      "beschrijving": "",
+      "opmerking": "",
+      "blok": "2",
+      "ruimte": "A1|13",
       "thema": "self"
     }
   }
